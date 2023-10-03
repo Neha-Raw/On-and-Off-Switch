@@ -1,15 +1,21 @@
-var button = document.querySelector("#on")
-let i = 0;
+const button = document.querySelector("#on")
+let com = 0;
 on.addEventListener("click", function () {
-    on.innerHTML = "Turn on";
-    on.style.background = "green"
-    if (i === 0) {
-        on.innerHTML = 'Turn on';
-        i = 1
+
+    on.style.backgroundColor = "green"
+
+
+    if (com === 0) {
+        button.innerHTML = "turn On"
+        let img = document.querySelector("#image")
+        img.setAttribute("src" , "bulb-on.png")
+        com = 1
+        
+    } else {
+        on.innerHTML = "turn Off "
+        on.style.backgroundColor = "white"
+        let img = document.querySelector("#image")
+        img.setAttribute("src" , "bulb-off.png")
+        com = 0
     }
-    else {
-        on.innerHTML = 'Turn off';
-        on.style.background="white"
-        i = 0
-    }
-});
+})
