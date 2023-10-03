@@ -1,0 +1,11 @@
+body{
+    background-color: lightpink;
+    text-align: center;
+}
+#on{
+    height: 100px;
+    width: 200px;
+    font-size: 40px;
+    box-shadow: 10px 10px 5px 5px;
+    border-radius: 10px;
+}
